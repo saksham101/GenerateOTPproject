@@ -1,0 +1,14 @@
+<!DOCTYPE HTML> 
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Rapipay | Form</title> 
+    <link rel="stylesheet" type="text/css" th:href="@{styles/main.css}">
+</head>
+	<div class="container">
+		<form th:action="@{/validateOTP}" pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$" method="post" required>
+			<input type="email" name="emailId" placeholder="Email Id"><br>
+			<button type="submit">Send OTP</button>
+		</form>
+	</div>
+</html>
